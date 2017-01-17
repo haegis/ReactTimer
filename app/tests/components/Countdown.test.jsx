@@ -32,6 +32,7 @@ describe("Countdown", () => {
 
       setTimeout(() => {
         expect(countdown.state.count).toBe(0);
+        expect(countdown.state.status).toBe("stopped");
         done();
       }, 3001);
     });

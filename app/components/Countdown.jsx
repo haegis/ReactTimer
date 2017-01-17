@@ -14,13 +14,7 @@ var Countdown = React.createClass({
     }
   },
 
-  componentWillUpdate: function(nextProps, nextState) {
-
-  },
-
   componentDidUpdate: function(previousProps, previousState) {
-      console.log("Component did update");
-
       if (this.state.status !== previousState.status) {
         switch (this.state.status) {
           case STATUS_STARTED:
