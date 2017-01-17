@@ -49,6 +49,7 @@ var Countdown = React.createClass({
 
     return (
       <div>
+        <h1 className="title">Countdown</h1>
         <Clock totalSeconds={count} />
         {renderControlArea()}
       </div>
